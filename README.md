@@ -33,14 +33,14 @@ An example of SemanticSimilarityAnalysis execution would be:
 
 In this example, we are executing the tool with the following parameters:
 
--ont: RDFXML file that contains the ontology in RDFXML format.
--out: The path of the output file. 
--ann: The annotation file that contains the relations between proteins and genes.
--i: The interaction file that contains the interactions between proteins. 
--ti: In this case we are using a Gene Associaton file, that is why we specify GA
--td: We specify IGI, because we want to compute Interaction Gene Interation. 
--out: The output path where the results will be saved. Each execution provides three files: The similarity matrix, ROC curve coordenates and AUC analysis.  
--smconf: In this execution we will use the similarity algorithm SIM_GROUPWISE_DAG_GIC. 
+1. -ont: RDFXML file that contains the ontology in RDFXML format.
+2. -out: The path of the output file. 
+3. -ann: The annotation file that contains the relations between proteins and genes.
+4. -i: The interaction file that contains the interactions between proteins. 
+5. -ti: In this case we are using a Gene Associaton file, that is why we specify GA
+6. -td: We specify IGI, because we want to compute Interaction Gene Interation. 
+7. -out: The output path where the results will be saved. Each execution provides three files: The similarity matrix, ROC curve coordenates and AUC analysis.  
+8. -smconf: In this execution we will use the similarity algorithm SIM_GROUPWISE_DAG_GIC. 
 
 # License
 
