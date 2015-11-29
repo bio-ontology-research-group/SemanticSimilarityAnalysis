@@ -29,9 +29,10 @@ GeneAnnotation files and BioGrid interaction files. So, these are the parameters
 
 An example of SemanticSimilarityAnalysis execution would be:
 
-java -jar SemanticSimilarityAnalysis.jar -ont "./resources/elk_rdfxml_properties.rdfxml" -ann "./resources/gene_association.sgd" -i -ann "./resources/gene_association.sgd" -td "GA" -ti "IGI"  -out "./outputs/elk_rdfxml_properties_bma" -smconf "SIM_GROUPWISE_DAG_GIC" 
+*java -jar SemanticSimilarityAnalysis.jar -ont "./resources/elk_rdfxml_properties.rdfxml" -ann "./resources/gene_association.sgd" -i -ann "./resources/gene_association.sgd" -td "GA" -ti "IGI"  -out "./outputs/elk_rdfxml_properties_bma" -smconf "SIM_GROUPWISE_DAG_GIC"* 
 
 In this example, we are executing the tool with the following parameters:
+
 -ont: RDFXML file that contains the ontology in RDFXML format.
 -out: The path of the output file. 
 -ann: The annotation file that contains the relations between proteins and genes.
