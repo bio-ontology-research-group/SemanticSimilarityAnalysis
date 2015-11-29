@@ -13,19 +13,19 @@ The application does not have GUI, it is a command line application. These are t
 1. -ont: This parameter specifies the location of the ontology in RDFXML format that will be analysed.
 2. -ann: This parameter contains the location of the annotations file that will be used for enriching the RDF Graph.
 3. -i: This parameter contains the location of the interaction file. 
-3. -td: This parameter specifies the type of the provider of interaction file. Now, we only implemented for 
+4. -td: This parameter specifies the type of the provider of interaction file. Now, we only implemented for 
 GeneAnnotation files and BioGrid interaction files. So, these are the parameters that we could use:
-- GA: It refers to Gene Annotation.
-- BG: It refers to BioGrid database.   
-4. -ti: This parameter specifies the kind of interaction that will be computed. As I said before just GeneAnnotation and BioGrid database have been covered, thus by are the parameters that can be used:
-- (IGI) Interaction Gene Interaction specified by Gene annotation files.
-- (IPI) Interaction Protein Interaction specified in Gene annotation files.
-- (GENETIC) Interaction Gene Interaction specified by BioGrid database.
-- (PHYSICAL) Interaction Protein Interaction specified by BioGrid database.
-3. -out: The path of the output file where the statistics will be stored.
-4. -smconf: The different statistics that have been used from SML library that are
-	4.1 SIM_GROUPWISE_DAG_GIC: This semantic similarity is the default measure and it uses the IC_annot_resnik_1995 algorithm to compute the semantic similarity between pairs of groups of vertices.
-	4.2 SIM_GROUPWISE_BMA: This similarity measure uses IC_annot_resnik_1995 algorithm to compute the semantic similarity between pairs of groups of vertices.
+  - GA: It refers to Gene Annotation.
+  - BG: It refers to BioGrid database.   
+5. -ti: This parameter specifies the kind of interaction that will be computed. As I said before just GeneAnnotation and BioGrid database have been covered, thus by are the parameters that can be used:
+  - (IGI) Interaction Gene Interaction specified by Gene annotation files.
+  - (IPI) Interaction Protein Interaction specified in Gene annotation files.
+  - (GENETIC) Interaction Gene Interaction specified by BioGrid database.
+  - (PHYSICAL) Interaction Protein Interaction specified by BioGrid database.
+6. -out: The path of the output file where the statistics will be stored.
+7. -smconf: The different statistics that have been used from SML library that are
+  4.1 SIM_GROUPWISE_DAG_GIC: This semantic similarity is the default measure and it uses the IC_annot_resnik_1995 algorithm to compute the semantic similarity between pairs of groups of vertices.
+  4.2 SIM_GROUPWISE_BMA: This similarity measure uses IC_annot_resnik_1995 algorithm to compute the semantic similarity between pairs of groups of vertices.
 
 An example of SemanticSimilarityAnalysis execution would be:
 
